@@ -38,6 +38,8 @@ public class JGC01 {
         assert s2.equals("Hello world!");
         
         System.out.println("OK2!!");
+        
+        // s2.add(1); // This will provide a compile error
     }
     
 }
