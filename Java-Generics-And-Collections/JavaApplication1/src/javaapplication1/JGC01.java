@@ -25,7 +25,7 @@ public class JGC01 {
         
         assert s.equals("Hello world!");
         
-        System.out.println("OK!!");
+        System.out.println("OK 1!!");
         
         // Here we store list of Objects
         List words2 = new ArrayList();
@@ -37,9 +37,17 @@ public class JGC01 {
         
         assert s2.equals("Hello world!");
         
-        System.out.println("OK2!!");
+        System.out.println("OK 2!!");
         
         // s2.add(1); // This will provide a compile error
+        
+        List<Integer> ints = List1.toList(new Integer[] {1, 2, 3});
+        List<String> words3 = List1.toList(new String[] {"Hello", "World"});
+        
+        assert ints.size() == 3;
+        assert words3.size() == 2;
+        
+        System.out.println("OK 3!!");
     }
     
 }
