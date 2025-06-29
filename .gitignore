@@ -7,3 +7,8 @@ target/
 build/
 *.war
 *.ear
+nbproject/
+build.xml
+manifest.mf
+project.xml
+build-impl.xml
