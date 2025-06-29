@@ -48,6 +48,14 @@ public class JGC01 {
         assert words3.size() == 2;
         
         System.out.println("OK 3!!");
+        
+        List<Integer> ints2 = List_2.toList(new Integer[] {1, 2, 3});
+        List<String> words4 = List_2.toList(new String[] {"Hello", "World"});
+        
+        assert ints.size() == 3;
+        assert words3.size() == 2;
+        
+        System.out.println("OK 4!!");
     }
     
 }
