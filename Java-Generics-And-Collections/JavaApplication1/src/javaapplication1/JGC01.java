@@ -56,6 +56,14 @@ public class JGC01 {
         assert words3.size() == 2;
         
         System.out.println("OK 4!!");
+        
+        ArrayList list = new ArrayList();
+        
+        List_2.addAll(list, new Integer[] {1, 2, 3});
+        
+        assert list.size() == 3;
+        
+        System.out.println("OK 5!!");
     }
     
 }

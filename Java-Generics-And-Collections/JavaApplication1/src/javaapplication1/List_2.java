@@ -21,4 +21,8 @@ public class List_2 {
         return list;
     }
     
+    public static <T> void addAll(List<T> list, T... arr) {
+        for (T ele: arr) list.add(ele);
+    }
+    
 }
