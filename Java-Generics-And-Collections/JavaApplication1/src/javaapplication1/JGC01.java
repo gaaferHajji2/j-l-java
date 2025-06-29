@@ -26,6 +26,18 @@ public class JGC01 {
         assert s.equals("Hello world!");
         
         System.out.println("OK!!");
+        
+        // Here we store list of Objects
+        List words2 = new ArrayList();
+        
+        words2.add("Hello"); words2.add("world!");
+        
+        // The compiler will cast 2-words to string
+        String s2 = words2.get(0) + " " + words2.get(1);
+        
+        assert s2.equals("Hello world!");
+        
+        System.out.println("OK2!!");
     }
     
 }
