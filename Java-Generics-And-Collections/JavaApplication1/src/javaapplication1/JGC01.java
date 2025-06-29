@@ -17,7 +17,7 @@ public class JGC01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        List<String> words = new ArrayList<>();
+        List<String> words = new ArrayList<String>();
         
         words.add("Hello"); words.add("world!");
         
