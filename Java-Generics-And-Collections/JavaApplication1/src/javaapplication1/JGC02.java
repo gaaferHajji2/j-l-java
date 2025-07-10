@@ -13,7 +13,9 @@ public class JGC02 {
            
            ints.add(1);
            
-           System.out.println("The First Value is: " + ints.getFirst());
+           System.out.println("The First Value is: " + ints.getFirst());           
+           System.out.println("The First Value is: " + ints.getFirst().intValue());
+
     }
     
 }
