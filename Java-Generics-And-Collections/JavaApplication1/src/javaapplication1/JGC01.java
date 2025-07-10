@@ -64,6 +64,20 @@ public class JGC01 {
         assert list.size() == 3;
         
         System.out.println("OK 5!!");
+        
+        ints = new ArrayList<>();
+        
+        List_2.addAll(ints, 1, 2);
+        List_2.addAll(ints, new Integer[] {4, 5});
+        
+        assert ints.size() == 4;
+        System.out.println("OK 6 !!");
+        
+        var ints3 = List_2.<Integer>toList();
+        var objs = List_2.<Object>toList(1, "two");
+        
+        System.out.println("Ints3 is: " + ints3);
+        System.out.println("objs is: " + objs);
     }
     
 }
