@@ -16,6 +16,8 @@ public class JGC02 {
            System.out.println("The First Value is: " + ints.getFirst());           
            System.out.println("The First Value is: " + ints.getFirst().intValue());
 
+           // This will fail, will not assert anything
+           assert Integer.valueOf(500) != Integer.valueOf(500);
     }
     
 }
