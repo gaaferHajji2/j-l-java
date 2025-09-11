@@ -19,9 +19,13 @@ public class SimpleSwingExample {
             container.add(closeButton);
             
             //set size and location
-            frame.setBounds(350, 350, 350, 350);
+//            frame.setBounds(350, 350, 350, 350);
             
             frame.setVisible(true);
+            
+            frame.pack();
+            
+            frame.setLocation(50, 50);
             
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         });
