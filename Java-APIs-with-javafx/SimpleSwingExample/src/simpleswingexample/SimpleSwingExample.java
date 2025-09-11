@@ -1,5 +1,6 @@
 package simpleswingexample;
 
+import java.awt.Component;
 import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,10 +14,15 @@ public class SimpleSwingExample {
             JFrame frame = new JFrame("Simple Swing Example");
             
             JButton closeButton = new JButton("Close");
+            JButton helpButton = new JButton("Help");
             
             Container container = frame.getContentPane();
             
             container.add(closeButton);
+            container.add(helpButton);
+            
+            Component[] components = container.getComponents();
+            System.out.println("There is/are: " + components.length + " componnet/s");
             
             //set size and location
 //            frame.setBounds(350, 350, 350, 350);
