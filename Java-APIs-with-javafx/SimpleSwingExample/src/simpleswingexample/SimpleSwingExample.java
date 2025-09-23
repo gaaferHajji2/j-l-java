@@ -2,6 +2,7 @@ package simpleswingexample;
 
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -16,7 +17,11 @@ public class SimpleSwingExample {
             JButton closeButton = new JButton("Close");
             JButton helpButton = new JButton("Help");
             
+            final int hGap = 20;
+            final int vGap = 10;
+            
             Container container = frame.getContentPane();
+            container.setLayout(new FlowLayout(FlowLayout.RIGHT, hGap, vGap));
             
             container.add(closeButton);
             container.add(helpButton);
