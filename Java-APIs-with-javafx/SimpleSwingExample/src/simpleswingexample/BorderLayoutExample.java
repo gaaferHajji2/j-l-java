@@ -6,22 +6,18 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
-
 public class BorderLayoutExample {
 
-    
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Simple Swing Example");
-               
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             
             final int hGap = 20;
             final int vGap = 10;
             
             Container container = frame.getContentPane();
-            container.setLayout(new BorderLayout(hGap, vGap));
-            
+            container.setLayout(new BorderLayout(hGap, vGap));            
             
             JButton closeButton = new JButton("Close");
             JButton helpButton = new JButton("Help");
