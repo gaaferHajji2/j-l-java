@@ -1,7 +1,9 @@
 package simpleswingexample;
 
 import java.awt.Container;
+import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -16,8 +18,15 @@ public class JLokaTestGridBagLayout {
             
             content.setLayout(new GridBagLayout());
             
-            for (int i=0; i<3; ++i) {
-                content.add(new JButton("JLoka Button " + (i+1)));
+            GridBagConstraints t1 = new GridBagConstraints();
+            
+            for (int i=0; i<5; ++i) {
+                for (int j=0; j<5; ++j){
+                    t1.gridx = i;
+                    t1.gridy = j;
+                    t1.insets = new Insets(10, 10, 10, 10);
+                    content.add(new JButton("JLoka Button " + (i+1)), t1);
+                }
             }
             
             frame.pack();
