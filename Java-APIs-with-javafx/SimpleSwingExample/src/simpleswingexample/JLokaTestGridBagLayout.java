@@ -22,8 +22,8 @@ public class JLokaTestGridBagLayout {
             
             for (int i=0; i<5; ++i) {
                 for (int j=0; j<5; ++j){
-                    t1.gridx = i;
-                    t1.gridy = j;
+                    t1.gridx = i == 4 ? GridBagConstraints.RELATIVE : i;
+                    t1.gridy = j == 4 ? GridBagConstraints.RELATIVE : j;
                     t1.insets = new Insets(10, 10, 10, 10);
                     content.add(new JButton("JLoka Button " + (i+1)), t1);
                 }
