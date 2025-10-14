@@ -3,7 +3,6 @@ package simpleswingexample;
 import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.Spring;
 import javax.swing.SpringLayout;
 import javax.swing.SwingUtilities;
 
