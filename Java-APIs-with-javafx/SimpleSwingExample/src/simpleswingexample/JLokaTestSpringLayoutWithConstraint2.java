@@ -3,11 +3,10 @@ package simpleswingexample;
 import java.awt.Container;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.Spring;
 import javax.swing.SpringLayout;
 import javax.swing.SwingUtilities;
 
-public class JLokaTestSpringLayoutWithConstraint {
+public class JLokaTestSpringLayoutWithConstraint2 {
     
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -36,16 +35,13 @@ public class JLokaTestSpringLayoutWithConstraint {
             springLayout.putConstraint(SpringLayout.WEST, btn2, 10, SpringLayout.EAST, btn1);
             
             // 4 ==> set y for btn2
-            springLayout.putConstraint(SpringLayout.NORTH, btn2, 20, SpringLayout.NORTH, container);
+            // springLayout.putConstraint(SpringLayout.NORTH, btn2, 20, SpringLayout.NORTH, container);
             
             // 5 ==> Set y for container
             springLayout.putConstraint(SpringLayout.SOUTH, container, 10, SpringLayout.SOUTH, btn1);
             
             // 6 ==> set x for container
             springLayout.putConstraint(SpringLayout.EAST, container, 10, SpringLayout.EAST, btn2);
-            
-            // to solve the problem when changing the height of JFrame from NORTH or SOUTH
-            frame.setResizable(false);
             
             frame.pack();
             frame.setVisible(true);
