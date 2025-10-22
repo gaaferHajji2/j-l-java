@@ -44,6 +44,8 @@ public class JLokaTestNestedGroups {
                     .addComponent(btn3)
                     .addComponent(btn4))
         );
+        
+        groupLayout.linkSize(btn1, btn2, btn3, btn4);
             
             frame.pack();
             frame.setVisible(true);
